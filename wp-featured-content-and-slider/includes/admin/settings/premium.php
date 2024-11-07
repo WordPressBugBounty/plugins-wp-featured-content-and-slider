@@ -51,6 +51,10 @@ if ( !defined( 'ABSPATH' ) ) {
 		.wpos-epb{color:#ff2700 !important;}
 	</style>
 
+	<div class="wpfcas-black-friday-banner-wrp">
+		<a href="<?php echo esc_url( WPFCAS_PLUGIN_LINK_UPGRADE ); ?>" target="_blank"><img style="width: 100%;" src="<?php echo esc_url(  WPFCAS_URL ); ?>assets/images/black-friday-banner.png" alt="black-friday-banner" /></a>
+	</div>
+
 	<div id="poststuff">
 		<div id="post-body" class="metabox-holder">
 			<div id="post-body-content">
@@ -67,7 +71,7 @@ if ( !defined( 'ABSPATH' ) ) {
 							<th>
 								<h2 class="wpos-epb">Premium</h2>
 								<p>Gain access to <strong>WP Featured Content and Slider</strong></p>
-								<a href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UPGRADE); ?>" target="_blank">Try Pro For 5 Days Free</a>
+								<a href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UPGRADE); ?>" target="_blank">Try Pro with Back Friday Deals</a>
 							</th>
 						</tr>
 					</thead>
@@ -77,7 +81,7 @@ if ( !defined( 'ABSPATH' ) ) {
 							<th></th>
 							<td></td>
 							<td><p>Gain access to <strong>WP Featured Content and Slider</strong></p>
-							<a href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UPGRADE); ?>" target="_blank">Try Pro For 5 Days Free</a>
+							<a href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UPGRADE); ?>" target="_blank">Try Pro with Back Friday Deals</a>
 						</tr>
 					</tfoot>
 

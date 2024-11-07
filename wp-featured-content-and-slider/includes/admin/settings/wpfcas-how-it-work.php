@@ -63,7 +63,7 @@ function wpfcasm_howitwork_page() { ?>
 									<tr>
 										<td>
 											<p><?php esc_html_e('Boost design and best solution for your website.', 'wp-featured-content-and-slider'); ?></p> <br/>
-											<a class="button button-primary button-orange" href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UNLOCK); ?>" target="_blank"><?php esc_html_e('Try Pro For 5 Days Free', 'wp-featured-content-and-slider'); ?></a>
+											<a class="button button-primary button-orange" href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UNLOCK); ?>" target="_blank"><?php esc_html_e('Try Pro with Back Friday Deals', 'wp-featured-content-and-slider'); ?></a>
 										</td>
 									</tr>
 								</tbody>
@@ -203,7 +203,7 @@ function wpfcasm_howitwork_page() { ?>
 								<li>100% Multi language</li>
 							</ul>
 							<div class="upgrade-to-pro">Gain access to <strong>WP Featured Content and Slider</strong></div>
-							<a class="button button-primary wpos-button-full button-orange" href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UNLOCK); ?>" target="_blank"><?php esc_html_e('Try Pro For 5 Days Free', 'wp-featured-content-and-slider'); ?></a>
+							<a class="button button-primary wpos-button-full button-orange" href="<?php echo esc_url(WPFCAS_PLUGIN_LINK_UNLOCK); ?>" target="_blank"><?php esc_html_e('Try Pro with Back Friday Deals', 'wp-featured-content-and-slider'); ?></a>
 						</div><!-- .inside -->
 					</div><!-- #general -->
 				</div><!-- .meta-box-sortables -->

@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display what features your company, product or service offers, using our shortcode OR template code. Also work with Gutenberg shortcode block.
  * Author: WP OnlineSupport, Essential Plugin
- * Version: 1.7.1
+ * Version: 1.7.2
  * Author URI: https://www.essentialplugin.com/wordpress-plugin/wp-featured-content-and-slider/
  *
  * @package WordPress
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( ! defined( 'WPFCAS_VERSION' ) ) {
-	define( 'WPFCAS_VERSION', '1.7.1' ); // Version of plugin
+	define( 'WPFCAS_VERSION', '1.7.2' ); // Version of plugin
 }
 
 if( ! defined( 'WPFCAS_DIR' ) ) {
@@ -50,11 +50,11 @@ if( ! defined( 'WPFCAS_CAT' ) ) {
 // }
 
 if( ! defined( 'WPFCAS_PLUGIN_LINK_UNLOCK' ) ) {
-	define('WPFCAS_PLUGIN_LINK_UNLOCK', 'https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=14791&edd_options[price_id]=7&wpos_cart_flush=1&utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO'); // Plugin link
+	define('WPFCAS_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO'); // Plugin link
 }
 
 if( ! defined( 'WPFCAS_PLUGIN_LINK_UPGRADE' ) ) {
-	define('WPFCAS_PLUGIN_LINK_UPGRADE', 'https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=14791&edd_options[price_id]=7&wpos_cart_flush=1&utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO'); // Plugin link
+	define('WPFCAS_PLUGIN_LINK_UPGRADE', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO'); // Plugin link
 }
 
 /**

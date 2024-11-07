@@ -42,7 +42,7 @@ class Wpfcas_Admin {
 	function wpfcas_register_menu() {
 
 		// Plugin features menu
-		add_submenu_page( 'edit.php?post_type='.WPFCAS_POST_TYPE, __('Upgrade To Premium - WP Featured Content and Slider', 'wp-featured-content-and-slider'), '<span style="color:#ff2700">'.__('Upgrade To Premium - Try Pro For 5 Days Free', 'wp-featured-content-and-slider').'</span>', 'edit_posts', 'wpfcas-premium-page', array($this, 'wpfcas_premium_page') );
+		add_submenu_page( 'edit.php?post_type='.WPFCAS_POST_TYPE, __('Upgrade To Premium - WP Featured Content and Slider', 'wp-featured-content-and-slider'), '<span style="color:#ff2700">'.__('Upgrade To PRO – Early Back Friday Deals', 'wp-featured-content-and-slider').'</span>', 'edit_posts', 'wpfcas-premium-page', array($this, 'wpfcas_premium_page') );
 	}
 
 	/**
