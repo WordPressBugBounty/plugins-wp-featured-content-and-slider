@@ -6,7 +6,7 @@
  * Domain Path: /languages/
  * Description: Easy to add and display what features your company, product or service offers, using our shortcode OR template code. Also work with Gutenberg shortcode block.
  * Author: WP OnlineSupport, Essential Plugin
- * Version: 1.7.2
+ * Version: 1.7.3
  * Author URI: https://www.essentialplugin.com/wordpress-plugin/wp-featured-content-and-slider/
  *
  * @package WordPress
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( ! defined( 'WPFCAS_VERSION' ) ) {
-	define( 'WPFCAS_VERSION', '1.7.2' ); // Version of plugin
+	define( 'WPFCAS_VERSION', '1.7.3' ); // Version of plugin
 }
 
 if( ! defined( 'WPFCAS_DIR' ) ) {

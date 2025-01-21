@@ -19,9 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</strong>
 </div> -->
 
-<div class="wpfcas-black-friday-banner-wrp">
-	<a href="<?php echo esc_url( WPFCAS_PLUGIN_LINK_UNLOCK ); ?>" target="_blank"><img style="width: 100%;" src="<?php echo esc_url(  WPFCAS_URL ); ?>assets/images/black-friday-banner.png" alt="black-friday-banner" /></a>
-</div>
+<!-- <div class="wpfcas-black-friday-banner-wrp">
+	<a href="<?php // echo esc_url( WPFCAS_PLUGIN_LINK_UNLOCK ); ?>" target="_blank"><img style="width: 100%;" src="<?php // echo esc_url(  WPFCAS_URL ); ?>assets/images/black-friday-banner.png" alt="black-friday-banner" /></a>
+</div> -->
+
+<strong style="color:#2ECC71; font-weight: 700;"><?php echo sprintf( __( ' <a href="%s" target="_blank" style="color:#2ECC71;">Upgrade To Pro</a> and Get Designs, Optimization, Security, Backup, Migration Solutions @ one stop.', 'wp-featured-content-and-slider'), WPFCAS_PLUGIN_LINK_UNLOCK); ?></strong>
 
 <table class="form-table wpfcas-metabox-table">
 	<tbody>
