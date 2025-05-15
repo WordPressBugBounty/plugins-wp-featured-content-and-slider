@@ -15,8 +15,8 @@ function wpfcas_register_guten_block() {
 	// Block Editor Script
 	wp_register_script( 'wpfcas-block-js', WPFCAS_URL.'assets/js/blocks.build.js', array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-block-editor', 'wp-components' ), WPFCAS_VERSION, true );
 	wp_localize_script( 'wpfcas-block-js', 'WpFcas_Block', array(
-																'pro_demo_link'		=> 'https://demo.wponlinesupport.com/prodemo/pro-wp-featured-content-and-slider/',
-																'free_demo_link'	=> 'https://demo.wponlinesupport.com/featured-content-and-slider-demo/',
+																'pro_demo_link'		=> 'https://demo.essentialplugin.com/prodemo/pro-wp-featured-content-and-slider/',
+																'free_demo_link'	=> 'https://demo.essentialplugin.com/featured-content-and-slider-demo/',
 																'pro_link'			=> WPFCAS_PLUGIN_LINK_UNLOCK,
 															));
 

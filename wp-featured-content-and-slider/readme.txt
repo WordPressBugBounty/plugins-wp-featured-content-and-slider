@@ -1,13 +1,13 @@
 === WP Featured Content and Slider ===
-Contributors: wponlinesupport, anoopranawat, pratik-jain, piyushpatel123, patelketan
+Contributors: essentialplugin
 Tags: featured content slider, custom post type featured content slider, featured content rotator services, featured content gallery, featured content slideshow,
 Requires at least: 4.0
-Tested up to: 6.7.1
-Stable tag: 1.7.3
+Tested up to: 6.8.1
+Stable tag: 1.7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A quick, easy way to add and display what features your company, product or service offers, using our shortcode OR template code. Also work with Gutenberg shortcode block.
+A quick, easy way to add and display what features your company, product or service offers, using our shortcode OR template code or Gutenberg block.
 
 == Description ==
 
@@ -150,6 +150,9 @@ Where designs are : design-1, design-2, design-3, design-4. You can use same par
 4. Category Shortcode
 
 == Changelog == 
+
+= 1.7.4 (15, May 2025) =
+* [*] Check compatibility with WordPress version 6.8.1
 
 = 1.7.3 (21, January 2025) =
 * [*] Check compatibility to WordPress version 6.7.1
