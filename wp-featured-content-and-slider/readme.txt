@@ -2,8 +2,8 @@
 Contributors: essentialplugin
 Tags: featured content slider, custom post type featured content slider, featured content rotator services, featured content gallery, featured content slideshow,
 Requires at least: 4.0
-Tested up to: 6.8.1
-Stable tag: 1.7.4
+Tested up to: 6.8.3
+Stable tag: 1.7.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -150,6 +150,12 @@ Where designs are : design-1, design-2, design-3, design-4. You can use same par
 4. Category Shortcode
 
 == Changelog == 
+
+= 1.7.6 (17, Nov 2025) =
+* [*] Fixed code conflict issue affecting widget saving.
+
+= 1.7.5 (12, Nov 2025) =
+* [*] Check compatibility with WordPress version 6.8.3
 
 = 1.7.4 (15, May 2025) =
 * [*] Check compatibility with WordPress version 6.8.1

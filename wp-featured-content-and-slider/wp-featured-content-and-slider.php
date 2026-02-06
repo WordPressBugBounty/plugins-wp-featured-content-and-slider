@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: WP Featured Content and Slider
- * Plugin URI: https://www.essentialplugin.com/wordpress-plugin/wp-featured-content-and-slider/
+ * Plugin URI: https://essentialplugin.com/wordpress-plugin/wp-featured-content-and-slider/
  * Text Domain: wp-featured-content-and-slider
  * Domain Path: /languages/
  * Description: Easy to add and display what features your company, product or service offers, using our shortcode OR template code. Also work with Gutenberg shortcode block.
  * Author: Essential Plugin
- * Version: 1.7.4
- * Author URI: https://www.essentialplugin.com
+ * Version: 1.7.6
+ * Author URI: https://essentialplugin.com
  *
  * @package WP Featured Content and Slider
  * @author Essential Plugin
@@ -17,44 +17,44 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if( ! defined( 'WPFCAS_VERSION' ) ) {
-	define( 'WPFCAS_VERSION', '1.7.4' ); // Version of plugin
+if ( ! defined( 'WPFCAS_VERSION' ) ) {
+	define( 'WPFCAS_VERSION', '1.7.6' ); // Version of plugin
 }
 
-if( ! defined( 'WPFCAS_DIR' ) ) {
+if ( ! defined( 'WPFCAS_DIR' ) ) {
 	define( 'WPFCAS_DIR', dirname( __FILE__ ) ); // Plugin dir
 }
 
-if( ! defined( 'WPFCAS_URL' ) ) {
+if ( ! defined( 'WPFCAS_URL' ) ) {
 	define( 'WPFCAS_URL', plugin_dir_url( __FILE__ ) ); // Plugin url
 }
 
-if( ! defined( 'WPFCAS_PLUGIN_BASENAME' ) ) {
+if ( ! defined( 'WPFCAS_PLUGIN_BASENAME' ) ) {
 	define( 'WPFCAS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) ); // Plugin base name
 }
 
-if( ! defined( 'WPFCAS_POST_TYPE' ) ) {
+if ( ! defined( 'WPFCAS_POST_TYPE' ) ) {
 	define( 'WPFCAS_POST_TYPE', 'featured_post' ); // Plugin post type
 }
 
-if( ! defined( 'WPFCAS_CAT' ) ) {
+if ( ! defined( 'WPFCAS_CAT' ) ) {
 	define( 'WPFCAS_CAT', 'wpfcas-category' ); // Plugin category
 }
 
-// if( ! defined( 'WPFCAS_PLUGIN_LINK_UNLOCK' ) ) {
-// 	define( 'WPFCAS_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/essential-plugin-bundle-pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO' ); // Plugin link
+// if ( ! defined( 'WPFCAS_PLUGIN_LINK_UNLOCK' ) ) {
+// 	define( 'WPFCAS_PLUGIN_LINK_UNLOCK', 'https://essentialplugin.com/essential-plugin-bundle-pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO' ); // Plugin link
 // }
 
-// if( ! defined( 'WPFCAS_PLUGIN_LINK_UPGRADE' ) ) {
-// 	define( 'WPFCAS_PLUGIN_LINK_UPGRADE', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO' ); // Plugin Check link
+// if ( ! defined( 'WPFCAS_PLUGIN_LINK_UPGRADE' ) ) {
+// 	define( 'WPFCAS_PLUGIN_LINK_UPGRADE', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO' ); // Plugin Check link
 // }
 
-if( ! defined( 'WPFCAS_PLUGIN_LINK_UNLOCK' ) ) {
-	define('WPFCAS_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO'); // Plugin link
+if ( ! defined( 'WPFCAS_PLUGIN_LINK_UNLOCK' ) ) {
+	define('WPFCAS_PLUGIN_LINK_UNLOCK', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Features-PRO'); // Plugin link
 }
 
-if( ! defined( 'WPFCAS_PLUGIN_LINK_UPGRADE' ) ) {
-	define('WPFCAS_PLUGIN_LINK_UPGRADE', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO'); // Plugin link
+if ( ! defined( 'WPFCAS_PLUGIN_LINK_UPGRADE' ) ) {
+	define('WPFCAS_PLUGIN_LINK_UPGRADE', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=Featured-Content&utm_campaign=Upgrade-PRO'); // Plugin link
 }
 
 /**
@@ -132,7 +132,7 @@ function wpfcas_install() {
 	flush_rewrite_rules();
 
 	// Deactivate free version
-	if( is_plugin_active('wp-featured-content-and-slider-pro/wp-featured-content-and-slider.php') ) {
+	if ( is_plugin_active('wp-featured-content-and-slider-pro/wp-featured-content-and-slider.php') ) {
 		add_action('update_option_active_plugins', 'wpfcas_deactivate_premium_version');
 	}
 }
@@ -168,14 +168,14 @@ function wpfcas_admin_notice() {
 	global $pagenow;
 
 	// If not plugin screen
-	if( 'plugins.php' != $pagenow ) {
+	if ( 'plugins.php' != $pagenow ) {
 		return;
 	}
 
 	// Check Lite Version
 	$dir = WP_PLUGIN_DIR . '/wp-featured-content-and-slider-pro/wp-featured-content-and-slider.php';
 
-	if( ! file_exists( $dir ) ) {
+	if ( ! file_exists( $dir ) ) {
 		return;
 	}
 
@@ -183,7 +183,7 @@ function wpfcas_admin_notice() {
 	$notice_transient	= get_transient( 'wpfcas_install_notice' );
 
 	// If free plugin exist
-	if( $notice_transient == false && current_user_can( 'install_plugins' ) ) {
+	if ( $notice_transient == false && current_user_can( 'install_plugins' ) ) {
 			echo '<div class="updated notice" style="position:relative;">
 				<p>
 					<strong>'.sprintf( __('Thank you for activating %s', 'wp-featured-content-and-slider'), 'WP Featured Content and Slider').'</strong>.<br/>
