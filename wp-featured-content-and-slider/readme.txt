@@ -2,7 +2,7 @@
 Contributors: essentialplugin
 Tags: featured content slider, custom post type featured content slider, featured content rotator services, featured content gallery, featured content slideshow,
 Requires at least: 4.0
-Tested up to: 6.8.3
+Tested up to: 6.9.1
 Stable tag: 1.7.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
